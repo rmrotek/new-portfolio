@@ -61,20 +61,20 @@ class HomeView extends Component {
             </Grid>
 
             <Grid item container xl={12} lg={8} md={12} sm={12} xs={11} justify='space-around'>
-              <IconContext.Provider value={{ color: "black", size: '3em' }}>
+             {/* temporary inline styles */}
 
-                <a href='https://www.linkedin.com/in/remigiusz-mrotek/' target='_blank' rel="noopener noreferrer">
+                <a href='https://www.linkedin.com/in/remigiusz-mrotek/' target='_blank' rel="noopener noreferrer" style={{color: 'black', fontSize: '3em'}}>
                   <FaLinkedin />
                 </a>
 
-                <a href='https://github.com/rmrotek' target='_blank' rel="noopener noreferrer">
+                <a href='https://github.com/rmrotek' target='_blank' rel="noopener noreferrer" style={{color: 'black', fontSize: '3em'}}>
                   <FaGithub />
                 </a>
 
-                <a href='https://www.linkedin.com/in/remigiusz-mrotek/' target='_blank' rel="noopener noreferrer">
+                <a href='mailto: remek87@gmail.com' target='_blank' rel="noopener noreferrer" style={{color: 'black', fontSize: '3em'}}>
                   <FaEnvelope />
                 </a>
-              </IconContext.Provider>
+              
             </Grid>
 
             <Grid item xl={12} lg={12} md={12} sm={12} xs={12}>
