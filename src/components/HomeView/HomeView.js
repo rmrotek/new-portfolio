@@ -20,23 +20,43 @@ class HomeView extends Component {
   render() {
     return (
       <>
-        <Grid container justify='center'>
-          <Grid container item xl={10} lg={10} md={10} sm={10} xs={10} justify='space-around' style={{ border: '2px solid black' }}>
+        <Grid container justify='center' style={{ backgroundColor: 'lightgrey' }}>
+          
+          <Grid item xl={12} lg={12} md={12} sm={12} xs={12}>
+            <br />
+          </Grid>
 
+          <Grid container item xl={10} lg={10} md={10} sm={12} xs={12} justify='space-around' style={{ border: '2px solid black', backgroundColor: 'lightblue' }}>
+            
+            <Grid item xl={12} lg={12} md={12} sm={12} xs={12}>
+              <br />
+            </Grid>
 
-            <Grid item xl={12} lg={8} md={12} sm={12} xs={12}>
+            <Grid item xl={8} lg={8} md={8} sm={8} xs={11}>
               <Typography variant='h3' align='center' paragraph>
                 {`${this.state.name} ${this.state.surname}`}
               </Typography>
 
-              <Typography variant='subtitle1' align='left'>
+              <Typography variant='subtitle1' align='left' paragraph>
                 {this.state.headerDescription}
               </Typography>
             </Grid>
-            <Grid item container xl={4} lg={3} md={12} sm={12} xs={12} justify='center' style={{ border: '2px solid black' }}>
+
+            <Grid item container xl={3} lg={3} md={3} sm={3} xs={12} justify='center' style={{ border: '2px solid black' }}>
               <Picture picture={this.state.picture} />
             </Grid>
 
+            <Grid item xl={12} lg={12} md={12} sm={12} xs={12}>
+              <br />
+              <br />
+            </Grid>
+
+            <Grid item xl={12} lg={8} md={12} sm={12} xs={11}>
+              <Typography variant='h4' align='center' paragraph>
+                Contact information and where to find me
+              </Typography>
+
+            </Grid>
 
 
           </Grid>
