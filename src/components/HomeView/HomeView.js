@@ -25,8 +25,8 @@ class HomeView extends Component {
       id: 1,
       title: 'Lazyness Radar',
       description: 'SPA, React, Firebase - database and auth',
-      homepage: 'https://rmrotek.github.io/lazyness-radar/#/',
-      github: 'https://github.com/rmrotek/lazyness-radar/settings',
+      homepage: 'https://rmrotek.github.io/lazyness-radar/',
+      github: 'https://github.com/rmrotek/lazyness-radar/',
     }],
 
   }
@@ -40,7 +40,7 @@ class HomeView extends Component {
             <br />
           </Grid>
 
-          <Grid container item xl={10} lg={10} md={10} sm={12} xs={12} justify='space-around' style={{ border: '2px solid black', backgroundColor: 'lightblue' }}>
+          <Grid container item xl={10} lg={10} md={10} sm={12} xs={12} justify='space-around' style={{ border: '2px solid black', backgroundColor: 'white' }}>
 
             <Grid item xl={12} lg={12} md={12} sm={12} xs={12}>
               <br />
