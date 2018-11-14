@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { Grid, Typography } from '@material-ui/core'
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { IconContext } from "react-icons";
+
 import Picture from '../Picture/Picture';
 
 import myFace from '../../myface.jpg'
@@ -21,13 +24,13 @@ class HomeView extends Component {
     return (
       <>
         <Grid container justify='center' style={{ backgroundColor: 'lightgrey' }}>
-          
+
           <Grid item xl={12} lg={12} md={12} sm={12} xs={12}>
             <br />
           </Grid>
 
           <Grid container item xl={10} lg={10} md={10} sm={12} xs={12} justify='space-around' style={{ border: '2px solid black', backgroundColor: 'lightblue' }}>
-            
+
             <Grid item xl={12} lg={12} md={12} sm={12} xs={12}>
               <br />
             </Grid>
@@ -55,8 +58,29 @@ class HomeView extends Component {
               <Typography variant='h4' align='center' paragraph>
                 Contact information and where to find me
               </Typography>
-
             </Grid>
+
+            <Grid item container xl={12} lg={8} md={12} sm={12} xs={11} justify='space-around'>
+              <IconContext.Provider value={{ color: "black", size: '3em' }}>
+
+                <a href='https://www.linkedin.com/in/remigiusz-mrotek/' target='_blank' rel="noopener noreferrer">
+                  <FaLinkedin />
+                </a>
+
+                <a href='https://github.com/rmrotek' target='_blank' rel="noopener noreferrer">
+                  <FaGithub />
+                </a>
+
+                <a href='https://www.linkedin.com/in/remigiusz-mrotek/' target='_blank' rel="noopener noreferrer">
+                  <FaEnvelope />
+                </a>
+              </IconContext.Provider>
+            </Grid>
+
+            <Grid item xl={12} lg={12} md={12} sm={12} xs={12}>
+              <br />
+            </Grid>
+
 
 
           </Grid>
